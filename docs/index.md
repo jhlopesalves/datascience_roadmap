@@ -5,9 +5,9 @@
 ### About This Roadmap
 
 This is my personal study path in data science.  
-I’m not selling a course or pretending to be a guru—this is just me learning, week by week, and documenting the process.
+So, this is just me learning, week by week, and documenting the process. If this roadmap and its resources are helpful to you, I'll be happy to help.
 
-The roadmap mixes the things I care about: **maths**, **machine learning practice**, **LLMs**, and the operational side of making projects reproducible. Everything here is code, versioned, and open for anyone curious to follow along.
+The roadmap mixes the things I'm focusing about Data Science: **maths**, **machine learning practice**, **LLMs**, and the operational side of making projects reproducible. Everything here is code, versioned, and open for anyone curious to follow along.
 
 ---
 
@@ -18,7 +18,7 @@ The roadmap mixes the things I care about: **maths**, **machine learning practic
 Use the buttons below if you want to jump straight into the roadmap, see my side projects, or explore the reference library I’m building along the way.
 
 <div class="hero__actions">
-<a class="md-button md-button--primary" href="roadmap/index.md">Start the Roadmap</a>
+<a class="md-button md-button--primary" href="roadmap/index.md">The Roadmap</a>
 <a class="md-button" href="projects/index.md">Browse Projects</a>
 <a class="md-button md-button--ghost" href="resources/bibliography.md">Core Library</a>
 </div>
