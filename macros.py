@@ -95,6 +95,7 @@ def define_env(env):
             "Api": "API",
             "Ml": "ML",
             "Eval": "Evaluation",
+            "Vs": "vs",
         }
         for src, target in replacements.items():
             label = label.replace(src, target)
@@ -113,16 +114,22 @@ def define_env(env):
         parts.append(sec("Math & stats", w.get("math_stats", "")))
         parts.append(sec("Bibliography (specific)", w.get("bibliography", "")))
         parts.append(sec("Docs (official)", w.get("docs", "")))
-        proj = w.get("project", {})
+        proj = w.get("project", {}) or {}
         if proj:
-            p = []
+            project_lines = []
             if proj.get("title"):
-                p.append(f"**Title:** {proj['title']}")
+                project_lines.append(f"**Title:** {proj['title']}")
+            if proj.get("description"):
+                project_lines.append(proj["description"])
             if proj.get("dataset"):
-                p.append(f"**Dataset:** {proj['dataset']}")
+                project_lines.append(f"**Dataset:** {proj['dataset']}")
+            if proj.get("dataset_links"):
+                project_lines.append("**Dataset links:**\n\n" + proj["dataset_links"])
             if proj.get("metrics"):
-                p.append(f"**Targets/metrics:** {proj['metrics']}")
-            parts.append("\n## Project\n" + "  \n".join(p) + "\n")
+                project_lines.append("**Targets/metrics:**\n\n" + proj["metrics"])
+            if proj.get("nuances"):
+                project_lines.append("**Nuances:**\n\n" + proj["nuances"])
+            parts.append("\n## Project\n\n" + "\n\n".join(project_lines) + "\n")
         parts.append(sec("Summary", w.get("summary", "")))
         checklist_items = [
             "- [ ] Code daily (≥60 min)",
