@@ -1,6 +1,6 @@
 # Jhonatan Lopes - My Data Science Roadmap
 
-<div class="hero" markdown>
+<div class="hero" markdown="1">
 
 ### About This Roadmap
 
