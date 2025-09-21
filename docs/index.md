@@ -2,21 +2,26 @@
 
 <div class="hero" markdown>
 
-### A production-grade path from first principles to deployed AI systems
+### About This Roadmap
 
-Cut through noise with an opinionated curriculum that balances **math**, **hands-on ML**, **LLMs**, and **operations discipline**. Everything lives as code, versioned and reproducible.
+This is my personal study path in data science.  
+I’m not selling a course or pretending to be a guru—this is just me learning, week by week, and documenting the process.
+
+The roadmap mixes the things I care about: **maths**, **machine learning practice**, **LLMs**, and the operational side of making projects reproducible. Everything here is code, versioned, and open for anyone curious to follow along.
+
+---
+
+- 40 weeks, split into 5 phases, with weekly goals
+- All content built and hosted with GitHub Actions + GitHub Pages
+- Written with MkDocs Material
+
+Use the buttons below if you want to jump straight into the roadmap, see my side projects, or explore the reference library I’m building along the way.
 
 <div class="hero__actions">
 <a class="md-button md-button--primary" href="roadmap/">Start the Roadmap</a>
 <a class="md-button" href="projects/">Browse Projects</a>
 <a class="md-button md-button--ghost" href="resources/bibliography/">Core Library</a>
 </div>
-
-<ul class="hero__meta">
-<li>40 weeks · 5 phases · Weekly deliverables</li>
-<li>GitHub Actions build + GitHub Pages hosting</li>
-<li>Built with MkDocs Material</li>
-</ul>
 
 </div>
 
