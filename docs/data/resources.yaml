@@ -1,0 +1,32 @@
+books:
+  esl:
+    author: Hastie, Tibshirani, Friedman
+    title: The Elements of Statistical Learning
+    url: https://hastie.su.domains/ElemStatLearn/
+  fluent_python:
+    author: Luciano Ramalho
+    title: Fluent Python (2e)
+    url: https://www.oreilly.com/library/view/fluent-python-2nd/9781492056355/
+  fpp3:
+    author: Hyndman & Athanasopoulos
+    title: 'Forecasting: Principles and Practice'
+    url: https://otexts.com/fpp3/
+  islr2:
+    author: James, Witten, Hastie, Tibshirani
+    title: An Introduction to Statistical Learning (2e, Python)
+    url: https://www.statlearning.com/
+  python_dsh:
+    author: Jake VanderPlas
+    title: Python Data Science Handbook
+    url: https://jakevdp.github.io/PythonDataScienceHandbook/
+  stat110:
+    author: Blitzstein & Hwang
+    title: Introduction to Probability
+    url: https://projects.iq.harvard.edu/stat110/home
+docs:
+  numpy: https://numpy.org/doc/
+  pandas: https://pandas.pydata.org/docs/
+  polars: https://docs.pola.rs/
+  scipy: https://docs.scipy.org/doc/scipy/
+  sklearn: https://scikit-learn.org/stable/user_guide.html
+  statsmodels: https://www.statsmodels.org/stable/user-guide.html

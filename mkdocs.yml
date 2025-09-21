@@ -1,0 +1,80 @@
+site_name: Jhonatan — Data Science Roadmap
+site_description: A rigorous, book-style roadmap to mastery in data science, ML, NLP and deployment.
+site_url: https://<your-user>.github.io/<your-repo>/
+repo_url: https://github.com/<your-user>/<your-repo>
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - Roadmap:
+      - Overview: roadmap/index.md
+      - Week 01 — Tooling, Dataframes, First Pipeline: roadmap/week-01.md
+      - Week 02 — Missingness, Encoding, Robust Summary: roadmap/week-02.md
+      - Archive & Placeholders: roadmap/weeks-03-40.md
+  - Resources:
+      - Key Bibliography: resources/bibliography.md
+      - Datasets: resources/datasets.md
+  - Projects:
+      - Overview: projects/index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - footnotes
+  - def_list
+  - tables
+
+plugins:
+  - search
+  - tags
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - macros
+
+extra_css:
+  - assets/custom.css
+
+extra_javascript:
+  - assets/custom.js
+
+extra:
+  author: Jhonatan
+  cohort: 2025
+
+watch:
+  - docs/data
