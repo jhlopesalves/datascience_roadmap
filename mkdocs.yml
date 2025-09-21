@@ -1,7 +1,7 @@
 site_name: Jhonatan — Data Science Roadmap
 site_description: A rigorous, book-style roadmap to mastery in data science, ML, NLP and deployment.
-site_url: https://<your-user>.github.io/<your-repo>/
-repo_url: https://github.com/<your-user>/<your-repo>
+site_url: https://jhlopesalves.github.io/roadmap_site/
+repo_url: https://github.com/jhlopesalves/roadmap_site
 theme:
   name: material
   language: en
@@ -64,7 +64,8 @@ plugins:
   - tags
   - git-revision-date-localized:
       fallback_to_build_date: true
-  - macros
+  - macros:
+      module_name: macros
 
 extra_css:
   - assets/custom.css
