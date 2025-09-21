@@ -25,6 +25,9 @@
   summary: Establish a frictionless workflow and a leakage‑free baseline. This template
     will be reused throughout the roadmap.
   title: Tooling, Dataframes, First Pipeline
+  bundles:
+  - bundle_foundations
+  - bundle_sklearn_core
 '10':
   bibliography: ''
   code_focus: ''
@@ -34,7 +37,9 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: GLMs for Counts/Skew
+  bundles:
+  - bundle_glm
 '11':
   bibliography: ''
   code_focus: ''
@@ -44,7 +49,9 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Margins vs Locality (SVM & k-NN)
+  bundles:
+  - bundle_svm_knn
 '12':
   bibliography: ''
   code_focus: ''
@@ -54,7 +61,9 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Trees & Bagging
+  bundles:
+  - bundle_trees_forests
 '13':
   bibliography: ''
   code_focus: ''
@@ -64,7 +73,9 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Boosting (HGBT, LightGBM)
+  bundles:
+  - bundle_boosting
 '14':
   bibliography: ''
   code_focus: ''
@@ -74,7 +85,9 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Unsupervised for Features (PCA/NMF/KMeans)
+  bundles:
+  - bundle_unsupervised_repr
 '15':
   bibliography: ''
   code_focus: ''
@@ -84,7 +97,9 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Buffer & Model Selection
+  bundles:
+  - bundle_model_selection
 '16':
   bibliography: ''
   code_focus: ''
@@ -94,7 +109,10 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Phase Project: Defensible Tabular Model'
+  bundles:
+  - bundle_fairness_calibration
+  - bundle_model_selection
 '17':
   bibliography: ''
   code_focus: ''
@@ -104,7 +122,9 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Inference Deep-Dive (AIC/BIC, robust SEs)
+  bundles:
+  - bundle_stats_inference
 '18':
   bibliography: ''
   code_focus: ''
@@ -114,7 +134,10 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Time Series I: ARIMA/SARIMAX'
+  bundles:
+  - bundle_statsmodels_ts
+  - bundle_fpp3
 '19':
   bibliography: ''
   code_focus: ''
@@ -124,7 +147,10 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Time Series II: Prophet & ML with Lags'
+  bundles:
+  - bundle_prophet
+  - bundle_sktime_darts
 '2':
   bibliography: '- *ISLR2 (Python)*, Ch. 2–3 — James et al.
 
@@ -147,6 +173,9 @@
   summary: Show that careful cleaning and encoding produce stronger baselines than
     exotic models.
   title: Missingness, Encoding, Robust Summary
+  bundles:
+  - bundle_stats_core
+  - bundle_sklearn_core
 '20':
   bibliography: ''
   code_focus: ''
@@ -156,7 +185,9 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Causal Basics (DoWhy/EconML)
+  bundles:
+  - bundle_causal
 '21':
   bibliography: ''
   code_focus: ''
@@ -166,7 +197,9 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Scaling: Dask, DuckDB'
+  bundles:
+  - bundle_scaling_data
 '22':
   bibliography: ''
   code_focus: ''
@@ -176,7 +209,9 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Monitoring: Great Expectations, Evidently'
+  bundles:
+  - bundle_monitoring
 '23':
   bibliography: ''
   code_focus: ''
@@ -186,7 +221,9 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Buffer
+  bundles:
+  - bundle_scaling_data
 '24':
   bibliography: ''
   code_focus: ''
@@ -196,7 +233,10 @@
   phase: Time Series & Causality
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Phase Project: Forecasting with Guardrails'
+  bundles:
+  - bundle_monitoring
+  - bundle_prophet
 '25':
   bibliography: ''
   code_focus: ''
@@ -206,7 +246,10 @@
   phase: Deep Learning
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: PyTorch Foundations (MLP)
+  bundles:
+  - bundle_pytorch_core
+  - bundle_dl_texts
 '26':
   bibliography: ''
   code_focus: ''
@@ -216,7 +259,10 @@
   phase: Deep Learning
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: CNNs & Regularisation
+  bundles:
+  - bundle_pytorch_core
+  - bundle_dl_texts
 '27':
   bibliography: ''
   code_focus: ''
@@ -226,7 +272,9 @@
   phase: Deep Learning
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Keras/TensorFlow Mirror
+  bundles:
+  - bundle_keras_tf
 '28':
   bibliography: ''
   code_focus: ''
@@ -236,7 +284,9 @@
   phase: Deployment & MLOps
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Export & ONNX Optimisation
+  bundles:
+  - bundle_onnx
 '29':
   bibliography: ''
   code_focus: ''
@@ -246,7 +296,9 @@
   phase: Deployment & MLOps
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: FastAPI vs Flask; Docker
+  bundles:
+  - bundle_serving_api
 '3':
   bibliography: ''
   code_focus: ''
@@ -256,7 +308,10 @@
   phase: Foundations
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Least Squares & Logistic Baselines
+  bundles:
+  - bundle_linear_algebra
+  - bundle_sklearn_core
 '30':
   bibliography: ''
   code_focus: ''
@@ -266,7 +321,9 @@
   phase: Deployment & MLOps
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Prefect & MLflow Registry
+  bundles:
+  - bundle_orchestration_tracking
 '31':
   bibliography: ''
   code_focus: ''
@@ -276,7 +333,9 @@
   phase: Deployment & MLOps
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Monitoring in Production
+  bundles:
+  - bundle_monitoring
 '32':
   bibliography: ''
   code_focus: ''
@@ -286,7 +345,10 @@
   phase: Deployment & MLOps
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Phase Project: Production-Ready Inference'
+  bundles:
+  - bundle_serving_api
+  - bundle_orchestration_tracking
 '33':
   bibliography: ''
   code_focus: ''
@@ -296,7 +358,9 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: NLP Foundations (spaCy/Stanza + TF-IDF)
+  bundles:
+  - bundle_nlp_foundations
 '34':
   bibliography: ''
   code_focus: ''
@@ -306,7 +370,9 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Dense Representations & Semantic Search
+  bundles:
+  - bundle_embeddings_search
 '35':
   bibliography: ''
   code_focus: ''
@@ -316,7 +382,9 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Transformers Fundamentals
+  bundles:
+  - bundle_hf_transformers
 '36':
   bibliography: ''
   code_focus: ''
@@ -326,7 +394,10 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: PEFT/LoRA + Quantisation + Serving
+  bundles:
+  - bundle_peft_quant
+  - bundle_serving_llm
 '37':
   bibliography: ''
   code_focus: ''
@@ -336,7 +407,10 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: RAG Systems & Evaluation
+  bundles:
+  - bundle_rag_orchestration
+  - bundle_rag_eval
 '38':
   bibliography: ''
   code_focus: ''
@@ -346,7 +420,9 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Responsible LLMs & Safety
+  bundles:
+  - bundle_responsible_ai
 '39':
   bibliography: ''
   code_focus: ''
@@ -356,7 +432,9 @@
   phase: NLP & LLMs
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Front-ends (Streamlit/Gradio) & Demos
+  bundles:
+  - bundle_ml_product
 '4':
   bibliography: ''
   code_focus: ''
@@ -366,7 +444,9 @@
   phase: Foundations
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Inference with statsmodels
+  bundles:
+  - bundle_stats_inference
 '40':
   bibliography: ''
   code_focus: ''
@@ -376,7 +456,9 @@
   phase: Capstone
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Capstone (choose Tabular, Forecasting, or RAG)
+  bundles:
+  - bundle_capstone_core
 '5':
   bibliography: ''
   code_focus: ''
@@ -386,7 +468,9 @@
   phase: Foundations
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Regularisation (Ridge/Lasso/Elastic Net)
+  bundles:
+  - bundle_regularisation
 '6':
   bibliography: ''
   code_focus: ''
@@ -396,7 +480,9 @@
   phase: Foundations
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Tests, Data Contracts, Tracking
+  bundles:
+  - bundle_mlops_hygiene
 '7':
   bibliography: ''
   code_focus: ''
@@ -406,7 +492,9 @@
   phase: Foundations
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Buffer & Utilities
+  bundles:
+  - bundle_foundations
 '8':
   bibliography: ''
   code_focus: ''
@@ -416,7 +504,9 @@
   phase: Foundations
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: 'Phase Project: Ethical Baseline'
+  bundles:
+  - bundle_fairness_calibration
 '9':
   bibliography: ''
   code_focus: ''
@@ -426,4 +516,7 @@
   phase: Supervised
   project: {}
   summary: ''
-  title: TBD — see syllabus
+  title: Logistic Mastery & Calibration
+  bundles:
+  - bundle_calibration
+  - bundle_metrics
