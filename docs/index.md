@@ -1,6 +1,6 @@
 # Jhonatan Lopes - My Data Science Roadmap
 
-<div class="hero" markdown="1">
+<div class="hero" markdown>
 
 ### About This Roadmap
 
@@ -18,9 +18,9 @@ The roadmap mixes the things I care about: **maths**, **machine learning practic
 Use the buttons below if you want to jump straight into the roadmap, see my side projects, or explore the reference library I’m building along the way.
 
 <div class="hero__actions">
-<a class="md-button md-button--primary" href="roadmap/">Start the Roadmap</a>
-<a class="md-button" href="projects/">Browse Projects</a>
-<a class="md-button md-button--ghost" href="resources/bibliography/">Core Library</a>
+<a class="md-button md-button--primary" href="roadmap/index.md">Start the Roadmap</a>
+<a class="md-button" href="projects/index.md">Browse Projects</a>
+<a class="md-button md-button--ghost" href="resources/bibliography.md">Core Library</a>
 </div>
 
 </div>
@@ -55,9 +55,9 @@ Use the buttons below if you want to jump straight into the roadmap, see my side
 
 <div class="quick-links" markdown>
 
-- :material-calendar-range: **[Roadmap](roadmap/)** — full week-by-week syllabus
-- :material-folder-cog: **[Projects](projects/)** — phase checkpoints and capstone
-- :material-book-open-page-variant: **[Resources](resources/bibliography/)** — core texts, docs, and datasets
+- :material-calendar-range: **[Roadmap](roadmap/index.md)** — full week-by-week syllabus
+- :material-folder-cog: **[Projects](projects/index.md)** — phase checkpoints and capstone
+- :material-book-open-page-variant: **[Resources](resources/bibliography.md)** — core texts, docs, and datasets
 
 </div>
 
