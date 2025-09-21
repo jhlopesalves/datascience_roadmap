@@ -1,9 +1,7 @@
 # Weeks 03–40
 
-This page collects links to all remaining weeks. Replace the placeholders in `docs/data/weeks.yaml` to render full content automatically.
+Every week already has its own page powered by `{{ render_week(n) }}`. Update the entries in `docs/data/weeks.yaml` as you flesh them out; the pages will refresh automatically.
 
-- [Week 03](/roadmap/week-03/) — create `docs/roadmap/week-03.md` with `{{ render_week(3) }}`
-- ...
-- [Week 40](/roadmap/week-40/) — create corresponding page
+{{ week_toc() }}
 
-> Tip: copy `docs/roadmap/week-01.md` and change the number.
+> Weeks 03–40 currently use placeholder copy. Edit the YAML data to publish a full brief for each week.

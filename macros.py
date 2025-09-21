@@ -1,4 +1,5 @@
 import os
+import posixpath
 
 import yaml
 
@@ -45,6 +46,19 @@ def define_env(env):
         )
         return "\n".join([p for p in parts if p])
 
+    def _relative_url(target):
+        page = env.variables.get("page")
+        page_file = getattr(page, "file", None) if page else None
+        page_src = getattr(page_file, "src_uri", "") if page_file else ""
+        if not page_src:
+            return target
+
+        base_dir = posixpath.dirname(page_src)
+        href = posixpath.relpath(target, base_dir or ".")
+        if href == ".":
+            href = "./"
+        return href
+
     def week_toc():
         lines = []
         phases = {}
@@ -54,9 +68,10 @@ def define_env(env):
             items = sorted(items, key=lambda x: x["number"])
             lines.append(f"### {phase}\n")
             for it in items:
-                anchor = f"week-{it['number']:02d}"
+                target = f"roadmap/week-{it['number']:02d}.md"
+                href = _relative_url(target)
                 lines.append(
-                    f"- [Week {it['number']:02d} — {it['title']}](/roadmap/week-{it['number']:02d}/)"
+                    f"- [Week {it['number']:02d} — {it['title']}]({href})"
                 )
             lines.append("\n")
         return "\n".join(lines)
